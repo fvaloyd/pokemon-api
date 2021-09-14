@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-12 mx-auto text-center">
+                <!--tittle-->
+                <h1>Pokedex</h1>
+                <!--pokemon card-->
+                <div class="card col-md-7 mx-auto">
+                    <div class="card-body">
+                        <img src="" width="200" id="pokemon-img" alt="pokemon">
+                        <h2 id="pokemon-name"></h2>
+                        <h3 id="pokemon-habilidad"></h3>
+                        <h4 id="pokemon-peso"></h4>
+                    </div>
+                </div>
+                <!--podemon form-->
+                <div class="card col-md-7 mx-auto mt-5">
+                    <div class="card-body">
+                        <form id="p-form">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Pokemon Name" autofocus>
+                            </div>
+                            <div class="form-group mt-2">
+                                <button class="btn btn-dark btn-block" id="p-change-btn">
+                                    Save change
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--script-->
+    <script src="./app/app.js"></script>
+</body>
+</html>
